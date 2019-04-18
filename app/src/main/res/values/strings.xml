@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">P01-DailyGoals</string>
+    <string name="button">OK</string>
+    <string name="rb1">Yes</string>
+    <string name="rb2">No</string>
+    <string name="rb3">Yes</string>
+    <string name="rb4">No</string>
+    <string name="rb5">Yes</string>
+    <string name="rb6">No</string>
+    <string name="textView1">Read up on materials before class\nDid I achieve this goal today?</string>
+    <string name="textView2">Arrive on time so as not to miss\nimportant part of the lesson\n Did I achieve this goal today?</string>
+    <string name="textView3">Attempt the problem myself\nDid I achieve this goal today?</string>
+    <string name="textView4">My personal reflection today</string>
+    <string name="tvReflection">Reflection: \n\n</string>
+    <string name="tv3">Attempt the problem myself: \n\n</string>
+    <string name="tv2">Arrive on time so as not to miss important part of lesson: \n\n</string>
+    <string name="tv1">Read up on materials before class: \n\n</string>
+    <string name="buttonBack">Back</string>
+</resources>
