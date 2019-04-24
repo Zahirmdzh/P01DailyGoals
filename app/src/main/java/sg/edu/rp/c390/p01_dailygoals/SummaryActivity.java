@@ -15,25 +15,25 @@ public class SummaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_summary);
 
-        Intent i = getIntent();
-        SharedPreferences myReflection = getSharedPreferences("mysavedreflection",MODE_PRIVATE);
-        String reflection = myReflection.getString("reflection","DefValue");
-
-//        String reflection = i.getStringExtra("reflection");
-        String radio1 = i.getStringExtra("radio1");
-        String radio2 = i.getStringExtra("radio2");
-        String radio3 = i.getStringExtra("radio3");
-
         TextView tv1 = findViewById(R.id.textView1);
         TextView tv2 = findViewById(R.id.textView2);
         TextView tv3 = findViewById(R.id.textView3);
         TextView tv4 = findViewById(R.id.textView4);
+        Intent i = getIntent();
+//        SharedPreferences myReflection = getSharedPreferences("mysavedreflection",MODE_PRIVATE);
+//        String reflection = myReflection.getString("reflection","DefValue");
+        String[] msg = i.getStringArrayExtra("msg");
 
-        tv1.setText(getResources().getString(R.string.tv1) + radio1);
-        tv2.setText(getResources().getString(R.string.tv2) + radio2);
-        tv3.setText(getResources().getString(R.string.tv3) + radio3);
+//        String reflection = i.getStringExtra("reflection");
+//        String radio1 = i.getStringExtra("radio1");
+//        String radio2 = i.getStringExtra("radio2");
+//        String radio3 = i.getStringExtra("radio3");
 
-        tv4.setText(getResources().getString(R.string.tvReflection) + reflection);
+        tv1.setText(msg[0]);
+         tv2.setText(msg[1]);
+        tv3.setText(msg[2]);
+
+        tv4.setText(getResources().getString(R.string.tvReflection) + msg[3]);
 
         Button btnBack = findViewById(R.id.buttonBack);
 
